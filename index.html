@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>RVKino Production | Видеопродакшн</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* СБРОС СТИЛЕЙ И БАЗА */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #eee;
+            line-height: 1.6;
+        }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; }
+
+        /* ЦВЕТА */
+        :root {
+            --gold: #d4af37;
+            --dark: #1a1a1a;
+            --light: #f4f4f4;
+        }
+
+        /* КОНТЕЙНЕР */
+        .wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ШАПКА */
+        header {
+            background: linear-gradient(to bottom, #000, #1a1a1a);
+            padding: 80px 0;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+        }
+        h1 {
+            font-size: 3rem;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #aaa;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--gold);
+            color: #000;
+            padding: 15px 30px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        .btn:hover { background: #fff; }
+
+        /* СЕКЦИИ */
+        section { padding: 60px 0; border-bottom: 1px solid #333; }
+        h2 {
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            border-left: 5px solid var(--gold);
+            padding-left: 15px;
+        }
+
+        /* УСЛУГИ (СЕТКА) */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: var(--dark);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+        .card h3 { color: #fff; margin-bottom: 10px; font-size: 1.3rem; }
+        .card p { color: #bbb; font-size: 0.95rem; }
+
+        /* ПОРТФОЛИО */
+        .film-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 15px;
+        }
+        .film-item {
+            background: var(--dark);
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .film-item strong { display: block; color: var(--gold); margin-bottom: 5px; }
+        .kp-link { font-size: 0.8rem; color: #4da6ff; }
+
+        /* КОМАНДА */
+        .team-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .member {
+            flex: 1;
+            min-width: 300px;
+            background: var(--dark);
+            padding: 30px;
+            border-radius: 10px;
+            border-top: 3px solid var(--gold);
+        }
+        .member h3 { font-size: 1.5rem; color: #fff; margin-bottom: 5px; }
+        .role { color: var(--gold); font-weight: bold; text-transform: uppercase; display: block; margin-bottom: 15px; font-size: 0.9rem; }
+        .bio { color: #ccc; margin-bottom: 15px; font-size: 0.95rem; }
+        .profile-link { color: #4da6ff; font-weight: bold; }
+
+        /* ФУТЕР */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* АДАПТИВНОСТЬ */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .team-box { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <header>
+        <div class="wrap">
+            <h1>RVKino Production</h1>
+            <p class="subtitle">Профессиональный видеопродакшн полного цикла</p>
+            <p style="max-width: 600px; margin: 0 auto 30px; color: #ccc;">
+                Снимаем рекламу, клипы и шоу. Опыт работы с федеральными каналами и крупными студиями.
+            </p>
+            <a href="https://t.me/VladRozhentsev_bot" class="btn">Заказать съемку</a>
+        </div>
+    </header>
+
+    <!-- ПОЧЕМУ МЫ -->
+    <section>
+        <div class="wrap">
+            <h2>Почему выбирают нас</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Опыт в кино</h3>
+                    <p>Работали над проектами «Простоквашино», «По законам военного времени» и фильмами студии Михалкова. Знаем стандарты качества.</p>
+                </div>
+                <div class="card">
+                    <h3>Под ключ</h3>
+                    <p>Берем на себя всё: от сценария и кастинга до монтажа и графики. Вам не нужно искать разных подрядчиков.</p>
+                </div>
+                <div class="card">
+                    <h3>Результат</h3>
+                    <p>Создаем контент, который работает на имидж бренда. Оперативные сроки и прозрачный бюджет.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- УСЛУГИ -->
+    <section>
+        <div class="wrap">
+            <h2>Наши услуги</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Реклама</h3>
+                    <p>Имиджевые и продающие ролики для ТВ, YouTube и соцсетей. Работа со сложным светом и актерами.</p>
+                </div>
+                <div class="card">
+                    <h3>Музыкальные клипы</h3>
+                    <p>Полный цикл производства клипов: режиссура, операторская работа, постпродакшн.</p>
+                </div>
+                <div class="card">
+                    <h3>Шоу и мероприятия</h3>
+                    <p>Мультисъемка концертов, корпоративов и онлайн-трансляций высокого качества.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОРТФОЛИО -->
+    <section>
+        <div class="wrap">
+            <h2>Фильмография</h2>
+            <div class="film-list">
+                <div class="film-item">
+                    <strong>По следам счастья</strong>
+                    <a href="https://www.kinopoisk.ru/film/14235554/" target="_blank" class="kp-link">КиноПоиск &rarr;</a>
+                </div>
+                <div class="film-item">
+                    <strong>Кража без правил</strong>
+                    <a href="https://www.kinopoisk.ru/film/14420431/" target="_blank" class="kp-link">КиноПоиск &rarr;</a>
+                </div>
+                <div class="film-item">
+                    <strong>Таисья Калинина</strong>
+                    <a href="https://www.kinopoisk.ru/film/14235553/" target="_blank" class="kp-link">КиноПоиск &rarr;</a>
+                </div>
+                <div class="film-item"><strong>Грань выбора</strong></div>
+                <div class="film-item"><strong>Современный телефон</strong></div>
+                <div class="film-item"><strong>Межгалактическая черёмуха</strong></div>
+                <div class="film-item"><strong>Застрявшие во сне</strong></div>
+                <div class="film-item"><strong>Действуй</strong></div>
+                <div class="film-item"><strong>Офис</strong></div>
+                <div class="film-item"><strong>Шпион</strong></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОМАНДА -->
+    <section>
+        <div class="wrap">
+            <h2>Руководство</h2>
+            <div class="team-box">
+                <!-- Влад -->
+                <div class="member">
+                    <h3>Владислав Роженцев</h3>
+                    <span class="role">Генеральный продюсер</span>
+                    <p class="bio">Основатель RVKino. Продюсер с опытом работы на площадках Сарика Андреасяна и Никиты Михалкова. Отвечает за стратегию и развитие.</p>
+                    <a href="https://kinopoisk.ru/name/10456780" target="_blank" class="profile-link">Профиль на КиноПоиск &rarr;</a>
+                </div>
+                
+                <!-- Иван -->
+                <div class="member">
+                    <h3>Иван Гавлюковский</h3>
+                    <span class="role">Исполнительный продюсер</span>
+                    <p class="bio">Представитель компании. Организует съемочный процесс, работу с заказчиками и контроль бюджета проектов.</p>
+                    <a href="https://www.kinopoisk.ru/name/10456781/" target="_blank" class="profile-link">Профиль на КиноПоиск &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrap">
+            <p>&copy; 2026 RVKino Production. Все права защищены.</p>
+            <p style="margin-top: 10px;">Контакты: <a href="https://t.me/VladRozhentsev_bot" style="color:var(--gold);">@VladRozhentsev_bot</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
