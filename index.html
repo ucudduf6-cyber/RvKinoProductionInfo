@@ -57,8 +57,20 @@
             font-weight: bold;
             border-radius: 5px;
             text-transform: uppercase;
+            margin-top: 20px;
         }
         .btn:hover { background: #fff; }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #ccc;
+        }
+        .contact-info a {
+            color: var(--gold);
+            margin: 0 10px;
+            font-weight: bold;
+        }
 
         /* СЕКЦИИ */
         section { padding: 60px 0; border-bottom: 1px solid #333; }
@@ -126,12 +138,15 @@
             padding: 40px 0;
             color: #666;
             font-size: 0.9rem;
+            background: #0a0a0a;
         }
+        footer a { color: var(--gold); }
 
         /* АДАПТИВНОСТЬ */
         @media (max-width: 768px) {
             h1 { font-size: 2rem; }
             .team-box { flex-direction: column; }
+            .contact-info { display: flex; flex-direction: column; gap: 10px; }
         }
     </style>
 </head>
@@ -142,10 +157,13 @@
         <div class="wrap">
             <h1>RVKino Production</h1>
             <p class="subtitle">Профессиональный видеопродакшн полного цикла</p>
-            <p style="max-width: 600px; margin: 0 auto 30px; color: #ccc;">
-                Снимаем рекламу, клипы и шоу. Опыт работы с федеральными каналами и крупными студиями.
-            </p>
-            <a href="https://t.me/VladRozhentsev_bot" class="btn">Заказать съемку</a>
+            
+            <div class="contact-info">
+                <span>Email: <a href="mailto:RvKinoproduction@zohomail.com">RvKinoproduction@zohomail.com</a></span>
+                <span>Telegram: <a href="https://t.me/Rvkinosrtbot" target="_blank">@Rvkinosrtbot</a></span>
+            </div>
+
+            <a href="https://t.me/Rvkinosrtbot" target="_blank" class="btn">Заказать съемку</a>
         </div>
     </header>
 
@@ -246,7 +264,11 @@
     <footer>
         <div class="wrap">
             <p>&copy; 2026 RVKino Production. Все права защищены.</p>
-            <p style="margin-top: 10px;">Контакты: <a href="https://t.me/VladRozhentsev_bot" style="color:var(--gold);">@VladRozhentsev_bot</a></p>
+            <p style="margin-top: 15px;">
+                Контакты:<br>
+                <a href="https://t.me/Rvkinosrtbot" target="_blank">@Rvkinosrtbot</a> | 
+                <a href="mailto:RvKinoproduction@zohomail.com">RvKinoproduction@zohomail.com</a>
+            </p>
         </div>
     </footer>
 
